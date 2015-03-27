@@ -1,7 +1,16 @@
 # Skybrud.PropertyEditors
-Various common purpose property editors for Umbraco 7.
 
-#### Property Editors
+**Skybrud.PropertyEditors** is a set of various common purpose property editors for Umbraco 7 that we use internally at Skybrud.dk.
+
+- [Download](#download)
+- [Property editors](#property-editors)
+- [License](https://github.com/skybrud/Skybrud.PropertyEditors/blob/master/LICENSE.md)
+
+## Download
+
+This package is still under development, but will be available for download as both a NuGet package and an Umbraco package. Stay tuned ;)
+
+## Property Editors
 
 - [Link Picker](#link-picker)
 - [Notify Page](#notify-page)
