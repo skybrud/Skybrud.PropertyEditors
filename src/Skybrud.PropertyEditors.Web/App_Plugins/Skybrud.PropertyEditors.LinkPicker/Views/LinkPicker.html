@@ -1,0 +1,47 @@
+﻿<div class="SkybrudPropertyEditors LinkPicker" ng-controller="Skybrud.PropertyEditors.LinkPicker.Controller">
+
+    <div ng-show="model.config.showTable !== '1'">
+        <ul ui-sortable ng-model="model.value">
+            <li ng-repeat="link in model.value">
+                <a href="{{link.url}}" target="_blank">{{link.name || link.url}}</a>
+                <a class="edit" href="#" prevent-default="" ng-click="editLink(link, $index)"><i class="icon icon-edit"></i></a>
+                <a class="remove" href="#" prevent-default="" ng-click="removeLink($index)"><i class="icon icon-delete"></i></a>
+                <i class="icon icon-navigation handle"></i>
+            </li>
+        </ul>
+        <div class="actions">
+            <a class="link" href="#" prevent-default="" ng-click="addLink()" ng-show="model.config.limit && model.value.length < model.config.limit">Add link <i class="icon icon-add"></i></a>
+        </div>
+    </div>
+
+    <div class="table" ng-show="model.config.showTable === '1'">
+        <table ng-show="model.value.length">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Url</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody ui-sortable="sortableOptions" ng-model="model.value">
+                <tr ng-repeat="link in model.value">
+                    <td style="text-transform: capitalize;">{{link.mode}}</td>
+                    <td>{{link.id}}</td>
+                    <td>{{link.name}}</td>
+                    <td><a href="{{link.url}}" target="_blank">{{link.url}}</a></td>
+                    <td style="text-align: right;">
+                        <a class="edit" href="#" prevent-default="" ng-click="editLink(link, $index)"><i class="icon icon-edit"></i></a>
+                        <a class="remove" href="#" prevent-default="" ng-click="removeLink($index)"><i class="icon icon-delete"></i></a>
+                        <i class="icon icon-navigation handle"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="actions">
+            <a class="link" href="#" prevent-default="" ng-click="addLink()" ng-show="model.config.limit && model.value.length < model.config.limit">Add link <i class="icon icon-add"></i></a>
+        </div>
+    </div>
+
+</div>

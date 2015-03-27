@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skybrud.PropertyEditors", "Skybrud.PropertyEditors\Skybrud.PropertyEditors.csproj", "{BBDDDEA6-B77C-4991-BBEB-61D27312C19D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skybrud.PropertyEditors.Web", "Skybrud.PropertyEditors.Web\Skybrud.PropertyEditors.Web.csproj", "{66DCE1CA-FF9D-44E7-A7CC-502E2E285FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBDDDEA6-B77C-4991-BBEB-61D27312C19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDDDEA6-B77C-4991-BBEB-61D27312C19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDDDEA6-B77C-4991-BBEB-61D27312C19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDDDEA6-B77C-4991-BBEB-61D27312C19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DCE1CA-FF9D-44E7-A7CC-502E2E285FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DCE1CA-FF9D-44E7-A7CC-502E2E285FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DCE1CA-FF9D-44E7-A7CC-502E2E285FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DCE1CA-FF9D-44E7-A7CC-502E2E285FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

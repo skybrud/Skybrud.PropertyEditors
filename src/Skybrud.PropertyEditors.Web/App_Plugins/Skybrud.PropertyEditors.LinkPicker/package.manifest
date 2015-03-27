@@ -1,0 +1,41 @@
+﻿{
+	propertyEditors: [
+		{
+			alias: "Skybrud.PropertyEditors.LinkPicker",
+			name: "Skybrud Property Editors - Link Picker",
+			editor: {
+				view: "~/App_Plugins/Skybrud.PropertyEditors.LinkPicker/Views/LinkPicker.html",
+				hideLabel: false,
+				valueType: "JSON"	
+			},
+			prevalues: {
+				fields: [
+					{
+						label: "Limit",
+						description: "Enter the maximum number of links allowed. If set to 0, no limit will be enforced.",
+						key: "limit",
+						view: "number",
+						validation: [
+							{
+								type: "Required" 
+							}                        
+						]
+					},
+					{
+						label: "Show in table",
+						description: "By the default the links will be shown as list. Select here if the links instead should be shown in a table with more details.",
+						key: "showTable",
+						view: "boolean"
+					}
+				]
+			}
+		}
+	],
+	javascript: [
+		"~/App_Plugins/Skybrud.PropertyEditors.LinkPicker/Scripts/Controllers/LinkPicker.js",
+	],
+	css: [
+		"~/App_Plugins/Skybrud.PropertyEditors.LinkPicker/Styles/LinkPicker.css",
+		"~/App_Plugins/Skybrud.PropertyEditors.LinkPicker/Styles/LinkPickerTable.css"
+	]
+}
