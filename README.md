@@ -22,6 +22,8 @@ Property editor for managing a collection of links. Depending on it's prevalues,
 ### Notify Page
 DataEdtior to handle mails send out to subscribers of a certain page. For this to work, you need to collect your subscribers in a custom-table "umbracoNodeSubscribers" 
 
+* [See documentation for Notify Page](/skybrud/Skybrud.PropertyEditors/docs/PropertyEditors/NotifyPage.md)
+
 ```SQL
 CREATE TABLE [dbo].[umbracoNodeSubscribers](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
