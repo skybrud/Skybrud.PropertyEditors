@@ -1,0 +1,17 @@
+﻿<div class="relationview" ng-controller="Skybrud.NotifyPage.Controller">
+    <div ng-if="emails.length > 0">
+
+        <a class="btn" ng-click="sendMessages()">Send message about updates to subscribers</a><br /><br />
+
+        <strong>Subscribers ({{emails.length}}):</strong><br />
+        <ul>
+            <li ng-repeat="email in emails">
+                {{email}}
+            </li>
+        </ul>
+    </div>
+    
+    <div ng-if="emails.length == 0">
+        There a no subscribers on this page.
+    </div>
+</div>

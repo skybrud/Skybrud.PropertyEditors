@@ -1,0 +1,18 @@
+﻿{
+	propertyEditors: [
+		{
+			alias: "Skybrud.PropertyEditors.NotifyPage",
+			name: "Skybrud Property Editors - Notify Page Subscribers",
+			editor: {
+				view: "~/App_Plugins/Skybrud.PropertyEditors.NotifyPage/Views/view.html",
+				hideLabel: false,
+				valueType: "JSON"	
+			}
+		}
+	],
+
+	javascript: [
+		'~/App_Plugins/Skybrud.PropertyEditors.NotifyPage/Controllers/view.controller.js',
+		'~/App_Plugins/Skybrud.PropertyEditors.NotifyPage/Resources/notifypage.resource.js'
+	]
+}

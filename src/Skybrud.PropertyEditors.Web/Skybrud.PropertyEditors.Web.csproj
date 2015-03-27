@@ -210,6 +210,9 @@
       <DependentUpon>LinkPickerTable.css</DependentUpon>
     </Content>
     <Content Include="App_Plugins\Skybrud.PropertyEditors.LinkPicker\Views\LinkPicker.html" />
+    <Content Include="App_Plugins\Skybrud.PropertyEditors.NotifyPage\Controllers\view.controller.js" />
+    <Content Include="App_Plugins\Skybrud.PropertyEditors.NotifyPage\Resources\notifypage.resource.js" />
+    <Content Include="App_Plugins\Skybrud.PropertyEditors.NotifyPage\Views\view.html" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +234,10 @@
       <Project>{bbdddea6-b77c-4991-bbeb-61d27312c19d}</Project>
       <Name>Skybrud.PropertyEditors</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_Plugins\Skybrud.PropertyEditors.NotifyPage\package.manifest" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
