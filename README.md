@@ -2,7 +2,7 @@
 Various common purpose property editors for Umbraco 7.
 
 
-## Notify Page
+### Notify Page
 DataEdtior to handle mails send out to subscribers of a certain page. For this to work, you need to collect your subscribers in a custom-table "umbracoNodeSubscribers" 
 
 CREATE TABLE [dbo].[umbracoNodeSubscribers](
