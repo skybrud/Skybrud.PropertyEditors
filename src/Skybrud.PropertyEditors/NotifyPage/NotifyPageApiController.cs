@@ -115,15 +115,12 @@ namespace Skybrud.PropertyEditors.NotifyPage {
             MailMessage msg = new MailMessage
             {
                 Subject = subject,
-                From = new MailAddress("no-reply@dcintra.dk", "DC Intra Mailbot"),
+                From = new MailAddress("no-reply@your-website.com", "Your Mailbot"),
                 IsBodyHtml = true,
                 Body = (body ?? "").Trim()
             };
 
             msg.To.Add(new MailAddress(email));
-
-            //msg.To.Clear();
-            //msg.To.Add("abjerner@skybrud.dk");
 
             SmtpClient client = new SmtpClient();
             client.Send(msg);
