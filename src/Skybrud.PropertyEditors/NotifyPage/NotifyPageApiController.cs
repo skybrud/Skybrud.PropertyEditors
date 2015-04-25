@@ -11,7 +11,7 @@ using Umbraco.Core.Logging;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.WebApi;
-using Skybrud.Umbraco.Module.ErrorHandling;
+using Skybrud.PropertyEditors.ErrorHandling;
 
 namespace Skybrud.PropertyEditors.NotifyPage {
     

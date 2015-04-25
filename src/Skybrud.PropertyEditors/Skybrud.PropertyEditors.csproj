@@ -99,9 +99,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Skybrud.Umbraco.Module">
-      <HintPath>..\packages\Skybrud.Umbraco.Module.1.0.21\lib\Skybrud.Umbraco.Module.dll</HintPath>
-    </Reference>
     <Reference Include="Skybrud.WebApi.Json">
       <HintPath>..\packages\Skybrud.WebApi.Json.1.0.2\lib\Skybrud.WebApi.Json.dll</HintPath>
     </Reference>
@@ -194,6 +191,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErrorHandling\Error.cs" />
     <Compile Include="Extensions\Json\JArrayExtensionMethods.cs" />
     <Compile Include="Extensions\Json\JObjectExtensionMethods.cs" />
     <Compile Include="LinkPicker\Extensions\PublishedContentExtensions.cs" />
