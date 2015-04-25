@@ -16,7 +16,7 @@
         Content,
 
         /// <summary>
-        /// Describes a link that is a referemce to an internal media node in Umbraco.
+        /// Describes a link that is a reference to an internal media node in Umbraco.
         /// </summary>
         Media
     
