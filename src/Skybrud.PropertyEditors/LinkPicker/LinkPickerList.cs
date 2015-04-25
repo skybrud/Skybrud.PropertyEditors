@@ -7,7 +7,7 @@ namespace Skybrud.PropertyEditors.LinkPicker {
     /// <summary>
     /// Class representing the model for the LinkPicker editor.
     /// </summary>
-    public class LinkPickerModel {
+    public class LinkPickerList {
 
         #region Properties
 
@@ -27,21 +27,21 @@ namespace Skybrud.PropertyEditors.LinkPicker {
 
         #region Constructors
 
-        internal LinkPickerModel() { }
+        internal LinkPickerList() { }
 
         #endregion
 
         #region Static methods
 
         /// <summary>
-        /// Deseralizes the specified JSON string into an instance of <code>LinkPickerModel</code>.
+        /// Deseralizes the specified JSON string into an instance of <code>LinkPickerList</code>.
         /// </summary>
         /// <param name="json">The raw JSON to be parsed.</param>
-        public static LinkPickerModel Deserialize(string json) {
+        public static LinkPickerList Deserialize(string json) {
 
             if (json != null && json.StartsWith("[") && json.EndsWith("]")) {
                 JArray array = JsonConvert.DeserializeObject<JArray>(json);
-                return new LinkPickerModel {
+                return new LinkPickerList {
                     Items = (
                         from obj in array
                         let link = LinkPickerItem.Parse(obj as JObject)
@@ -51,7 +51,7 @@ namespace Skybrud.PropertyEditors.LinkPicker {
                 };
             }
 
-            return new LinkPickerModel {
+            return new LinkPickerList {
                 Items = new LinkPickerItem[0]
             };
 

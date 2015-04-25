@@ -10,7 +10,7 @@ namespace Skybrud.PropertyEditors.LinkPicker {
         }
 
         public object ConvertDataToSource(PublishedPropertyType propertyType, object data, bool preview) {
-            return LinkPickerModel.Deserialize(data as string);
+            return LinkPickerList.Deserialize(data as string);
         }
 
         public object ConvertSourceToObject(PublishedPropertyType propertyType, object source, bool preview) {

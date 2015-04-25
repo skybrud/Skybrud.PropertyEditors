@@ -198,7 +198,7 @@
     <Compile Include="LinkPicker\Extensions\PublishedContentExtensions.cs" />
     <Compile Include="LinkPicker\LinkPickerItem.cs" />
     <Compile Include="LinkPicker\LinkPickerMode.cs" />
-    <Compile Include="LinkPicker\LinkPickerModel.cs" />
+    <Compile Include="LinkPicker\LinkPickerList.cs" />
     <Compile Include="LinkPicker\LinkPickerPropertyValueConverter.cs" />
     <Compile Include="NotifyPage\NotifyPageApiController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -10,12 +10,15 @@ namespace Skybrud.PropertyEditors.LinkPicker.Extensions {
     public static class PublishedContentExtensions {
 
         /// <summary>
-        /// Gets the first link item from a LinkPicker model from the property with the specified <code>propertyAlias</code>.
+        /// Gets the first link item from a LinkPicker model from the property with the specified
+        /// <code>propertyAlias</code>. If property isn't a link picker (or the list is empty),
+        /// <code>NULL</code> will be returned.
         /// </summary>
         /// <param name="content">The published content to read the property from.</param>
         /// <param name="propertyAlias">The alias of the property.</param>
         public static LinkPickerItem GetLinkPickerItem(this IPublishedContent content, string propertyAlias) {
-            return content == null ? null : GetLinkPickerModel(content, propertyAlias).Items.FirstOrDefault();
+            LinkPickerList list = content.GetPropertyValue(propertyAlias) as LinkPickerList;
+            return list == null ? null : list.Items.FirstOrDefault();
         }
 
         /// <summary>
@@ -23,8 +26,8 @@ namespace Skybrud.PropertyEditors.LinkPicker.Extensions {
         /// </summary>
         /// <param name="content">The published content to read the property from.</param>
         /// <param name="propertyAlias">The alias of the property.</param>
-        public static LinkPickerModel GetLinkPickerModel(this IPublishedContent content, string propertyAlias) {
-            return (content == null ? null : content.GetPropertyValue<LinkPickerModel>(propertyAlias)) ?? new LinkPickerModel {
+        public static LinkPickerList GetLinkPickerList(this IPublishedContent content, string propertyAlias) {
+            return (content == null ? null : content.GetPropertyValue<LinkPickerList>(propertyAlias)) ?? new LinkPickerList {
                 Items = new LinkPickerItem[0]
             };
         }
