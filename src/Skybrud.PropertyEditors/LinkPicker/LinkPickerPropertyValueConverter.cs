@@ -3,7 +3,7 @@ using Umbraco.Core.PropertyEditors;
 
 namespace Skybrud.PropertyEditors.LinkPicker {
 
-    public class LinkPickerPropertyValueConverter : IPropertyValueConverter {
+    internal class LinkPickerPropertyValueConverter : IPropertyValueConverter {
 
         public bool IsConverter(PublishedPropertyType propertyType) {
             return propertyType.PropertyEditorAlias == "Skybrud.PropertyEditors.LinkPicker";
