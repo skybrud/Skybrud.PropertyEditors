@@ -1,4 +1,4 @@
-﻿.table .ui-sortable-helper {
+.table .ui-sortable-helper {
   border-left: 1px solid #d9d9d9;
 }
 .table .ui-sortable-helper > * {
@@ -49,4 +49,3 @@
 .table > table > * > tr > th:last-child {
   border-right: 1px solid #dbdbdb;
 }
-/*# sourceMappingURL=LinkPickerTable.css.map */

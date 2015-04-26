@@ -3,6 +3,8 @@
     if (!$scope.model.value || !Array.isArray($scope.model.value)) {
         $scope.model.value = [];
     }
+
+    $scope.cfg = $scope.model.config.config;
     
     // Set the "mode" property if not already present
     $scope.model.value.forEach(function (link) {
