@@ -19,6 +19,8 @@ This package is still under development, but will be available for download as b
 
 Property editor for managing a collection of links. Depending on it's prevalues, this editor can work both as a multi link picker or a single link picker. A prevalue also lets you set wether the links should be displayed in a simple list or in a table with more details.
 
+**Notice:** The link picker has now been moved to it's own repository/package. It is recommended to use new new link picker package instead: https://github.com/skybrud/Skybrud.LinkPicker
+
 ### Notify Page
 DataEdtior to handle mails send out to subscribers of a certain page. 
 Yet to be done: isolate mailmessage in either .config-file or Umbraco Backoffice
